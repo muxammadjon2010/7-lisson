@@ -1,0 +1,10 @@
+.box{
+    width: 120px;
+    height:200px;
+    background-color: aqua;
+
+}
+
+@keyframes box{
+    
+}

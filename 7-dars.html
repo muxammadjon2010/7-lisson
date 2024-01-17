@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .traffic-light {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .signal {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 10px;
+      background-color: #ccc;
+    }
+
+    .red {
+      animation: redBlink 5s infinite;
+    }
+
+    .yellow {
+      animation: yellowBlink 5s infinite;
+    }
+
+    .green {
+      animation: greenBlink 5s infinite;
+    }
+
+    @keyframes redBlink {
+      0%{
+        background-color: gray;
+      }
+      25%{
+        background-color: red;
+      }
+      50% {
+        background-color: gray;
+      }
+      75%{
+        background-color: gray;
+      }
+      100%{
+        background-color: gray;
+      }
+    }
+
+    @keyframes yellowBlink {
+      0% {
+        background-color: gray;
+      }
+      25%{
+        background-color: gray;
+      }
+      50% {
+        background-color: yellow;
+      }
+      75%{
+        background-color: gray;
+      }
+      100%{
+        background-color: gray;
+      }
+    }
+
+    @keyframes greenBlink {
+      0% {
+        background-color: gray;
+      }
+      25%{
+        background-color: gray;
+      }
+      50% {
+        background-color: gray;
+      }
+      75%{
+        background-color: green;
+      }
+      100%{
+        background-color: gray;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="traffic-light">
+  <div class="signal red"></div>
+  <div class="signal yellow"></div>
+  <div class="signal green"></div>
+</div>
+
+</body>
+</html>
